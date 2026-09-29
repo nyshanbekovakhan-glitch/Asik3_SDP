@@ -4,7 +4,7 @@
 
 Passengers pre-register for a time slot on a bus route so morning commutes do not become overcrowded. If the number of registered passengers reaches the route capacity, a backup bus is dispatched automatically for passengers who registered in advance. Passengers who arrive without registration are served as standby passengers and are not guaranteed a backup bus.
 The system must work with different capacity-tracking technologies. A route may use a modern mobile booking system, a third-party transit API, or an old legacy ticket machine. The legacy ticket machine was created before modern software integration and cannot be modified.
-The main abstraction is a reservation and capacity-management service. The system does not model different types of buses, so it does not use a vehicle hierarchy such as the Vehicle and Workshop example from the lectures.
+The main abstraction is a reservation and capacity-management service.
 
  2. Why Bridge Alone Would Not Be Enough
 If only the Bridge pattern were used, the legacy ticket machine would need to implement the `CapacityTrackingSystem` interface directly.
